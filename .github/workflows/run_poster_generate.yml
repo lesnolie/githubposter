@@ -88,10 +88,10 @@ jobs:
      #   run: |
      #     python -m github_poster twitter --twitter_user_name ${{ secrets.TWITTER_USER_NAME }} --me ${{ env.ME }} --with-animation --with-skyline
 
-      - name: Run sync github script
-        if: contains(env.TYPE, 'github')
-        run: |
-          python -m github_poster github --github_user_name ${{ secrets.G_USER_NAME }} --me ${{ env.ME }} --with-animation --with-skyline
+     # - name: Run sync github script
+     #   if: contains(env.TYPE, 'github')
+     #   run: |
+     #     python -m github_poster github --github_user_name ${{ secrets.G_USER_NAME }} --me ${{ env.ME }} --with-animation --with-skyline
 
      # - name: Run sync gitlab script
      #   if: contains(env.TYPE, 'gitlab')
