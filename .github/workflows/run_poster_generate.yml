@@ -137,7 +137,7 @@ jobs:
       - name: Mv svg files to examples
         # only for me to show
         if: github.repository_owner == 'lesnolie'
-        run: mv OUT_FOLDER/*.svg examples/ && mv OUT_FOLDER/*.stl examples/
+        run: mv OUT_FOLDER/*.svg examples/ || mv OUT_FOLDER/*.stl examples/
 
       - name: Push new postger
         run: |
